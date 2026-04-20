@@ -1,0 +1,15 @@
+openapi: 3.0.0
+info:
+  title: hw6-api
+  version: 1.0.0
+paths:
+  /create_task:
+    post:
+      operationId: createTask
+      responses:
+        '200':
+          description: OK
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4e6gq0hrblsicbai7eh
+        service_account_id: ajenrcn9t23412mcmeb6
